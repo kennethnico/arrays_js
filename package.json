@@ -1,0 +1,7 @@
+{
+  "name": "arrays_js",
+  "version": "1.0.0",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
