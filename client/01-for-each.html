@@ -9,5 +9,30 @@
 </head>
 <body>
     <div id="app"></div>
+    <div id="reto"></div>
+    <script>
+        const products = [
+            {title: 'Burguer', price:121},
+            {title: 'Pizza', price:20},
+        ];
+        const app = document.getElementById('app');
+        products.forEach(product => {
+           app.innerHTML += `<li>${product.title} - ${product.price}</li>`;
+        });
+        const cList =[
+            {title: 'Lavar auto', status:'Completada'},
+            {title: 'Comprar cena', status:'No Completada'},
+            {title: 'Tarea escuela', status:'Completada'},
+            {title: '1 hr. en Platzi', status:'Completada'},
+        ];
+        const reto = document.getElementById('reto');
+        cList.forEach(item => {
+            if(item.status === 'Completada'){
+                reto.innerHTML += `<input type='checkbox' value='${item.title}' checked>${item.title}<br>`;
+            }else{
+                reto.innerHTML += `<input type='checkbox' value='${item.title}'>${item.title}<br>`;
+            }
+        });
+    </script>
 </body>
 </html>
