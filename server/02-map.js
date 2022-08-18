@@ -8,6 +8,6 @@ for (let i = 0; i < letters.length; i++) {
 console.log('Original:',letters);
 console.log('Nuevo:',newArray);
 //Con map
-const newArray2 = letters.map(item => {return `${item}++`;});
+const newArray2 = letters.map(item => item+'++');
 console.log('Original:',letters);
 console.log('Nuevo-map:',newArray2);
