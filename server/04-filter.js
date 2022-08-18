@@ -15,23 +15,34 @@ const newArray2 = words.filter(item => item.length>=6);
 console.log('Original con Filter',words);
 console.log('Palabras con Filter',newArray2);
 
-const orders =[
+const orders = [
     {
-        customerName: 'Edwin',
+        customerName: "Edwin",
         total: 60,
         delivered: true,
     },
     {
-        customerName: 'Kenet',
-        total: 100,
+        customerName: "Iker",
+        total: 120,
+        delivered: false,
+    },
+    {
+        customerName: "Santiago",
+        total: 180,
         delivered: true,
     },
     {
-        customerName: 'Nicolás',
-        total: 160,
-        delivered: false,
+        customerName: "Matias",
+        total: 240,
+        delivered: true,
     },
 ];
-const deliveredDone = orders.filter(item => item.delivered && item.total >= 100);
-console.log('Ordenes - ', orders);
-console.log('Orders filters', deliveredDone);
+//const deliveredDone = orders.filter(item => item.delivered && item.total >= 100);
+//console.log('Ordenes - ', orders);
+//console.log('Orders filters', deliveredDone);
+const search = (query) => {
+    return orders.filter(item => {
+        return item.customerName.includes(query);
+    });
+}
+console.log(search('Edwin'));
