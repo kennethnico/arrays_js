@@ -62,3 +62,8 @@ function solution3_1(array){
 }
 console.log(solution3(miArray));
 console.log(solution3_1(miArray));
+
+//4 Retorna solo las palabras de 4 letras
+const words = ['amor', 'sol','piedra','día'];
+const func = words.filter(item => item.length >= 4);
+console.log(func);
