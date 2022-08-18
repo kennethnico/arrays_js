@@ -67,3 +67,11 @@ console.log(solution3_1(miArray));
 const words = ['amor', 'sol','piedra','día'];
 const func = words.filter(item => item.length >= 4);
 console.log(func);
+
+//5 Calcula la suma total de los elementos
+const num1 = [1,1,1];
+const num2 = [2,4,8];
+const sumT = num1.reduce((n,i)=> n+i,0);
+const sumT2 = num2.reduce((n,i)=> n+i,0);
+console.log("Total del array 1: ",sumT);
+console.log("Total del array 2: ",sumT2);
