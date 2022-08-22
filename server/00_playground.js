@@ -152,3 +152,10 @@ console.log(solution12(['diamonds', 'hearts', 'spades']));
 //13 Retorna la posición de una llave dentro de una lista
 //14 Transforma un string y sepáralo por comas, como en un CSV
 //15 Construye una URL con base a un string
+function solution15(title){
+    // Tu código aquí 👈
+    return title.split(' ').join('-').toLowerCase();
+}
+console.log(solution15("La forma de corres Python"));
+console.log(solution15("La API para nunca parar de aprender"));
+console.log(solution15("Curso de arrays"));
