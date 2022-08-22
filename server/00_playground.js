@@ -75,3 +75,11 @@ const sumT = num1.reduce((n,i)=> n+i,0);
 const sumT2 = num2.reduce((n,i)=> n+i,0);
 console.log("Total del array 1: ",sumT);
 console.log("Total del array 2: ",sumT2);
+
+//6 Retornar si al menos alguno de los números es par
+const isPar = [1,3,5,7,10,11];
+const isPar2 = [1,3,5];
+const rta = isPar.some(item => item%2===0);
+const rta2 = isPar2.some(item => item%2===0);
+console.log("Rta1: ",rta);
+console.log("Rta2: ",rta2);
