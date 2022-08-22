@@ -2,6 +2,7 @@
   "name": "arrays_js",
   "version": "1.0.0",
   "dependencies": {
+    "date-fns": "^2.29.2",
     "http-server": "^0.12.3"
   }
 }
