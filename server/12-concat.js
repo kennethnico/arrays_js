@@ -1,4 +1,4 @@
-//Método para concatenar/fusionar arrays
+//Método para concatenar/fusionar arrays //Concat es inmutable: Genera un array nuevo
 const elements =[1,1,2,2];
 const elements2 =[3,3,4,4];
 
@@ -8,5 +8,7 @@ for (let i = 0; i < elements2.length; i++) {
     newArray.push(element);
 }
 const newArray2 = elements.concat(elements2);
+const newArray3 = [...elements2,...'randoms'];
 console.log(newArray);
 console.log(newArray2);
+console.log(newArray3);
