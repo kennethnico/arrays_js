@@ -159,3 +159,16 @@ function solution15(title){
 console.log(solution15("La forma de corres Python"));
 console.log(solution15("La API para nunca parar de aprender"));
 console.log(solution15("Curso de arrays"));
+
+//Contar el total de letras en un arreglo
+function solutionWords(lines) {
+    // Tu código aquí 👈
+    return lines.flatMap(item => item.split(" ")).length;
+}
+const rtaW = [
+    "Beautiful is better than ugly",
+    "Explicit is better than implicit",
+    "Simple is better than complex",
+    "Complex is better than complicated",
+]
+console.log(solutionWords(rtaW));
